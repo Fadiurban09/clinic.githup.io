@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200;600&family=Caveat:wght@400;500;600;700&family=Courgette&family=Indie+Flower&family=Lobster&family=Pacifico&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&family=Secular+One&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+width: 100%;
+font-family: Caveat;
+background-color: silver;
+}
+/***********************page-1*****************************/
+/******header**/
+header{
+width: 100%;
+display: flex;
+justify-content: space-between; align-items: center;
+padding: 0.5em 5em;
+box-shadow: 0 0 30px rgb(97, 241, 241);
+background-color: rgba(13, 191, 245, 0.7);
+}
+header .logo{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+
+}
+header nav{
+width: 40%;
+display: flex;
+justify-content: space-between; align-items: center;
+}
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 15px white;
+    transition: transform 0.7s;
+}
+header nav a:hover{
+    transform: scale(1.3);
+}
+header nav .a-doctors{
+    transform: scale(1.5);
+}
+.page-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7)) ,url(back-1.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: move-back 50s infinite linear;
+}
+@keyframes move-back {
+0%{ background-position: left;}
+50%{ background-position: right;}
+100%{ background-position: left;}
+}
+/**caption-page-1***/
+.caption-page-1{
+position: absolute;
+top: 19em;
+
+}
+.caption-page-1 h1{
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 0 15px black;
+    padding-left: 2em;
+}
+.caption-page-1 h1 span {
+    color: rgb(97, 241, 241);
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+}
+.caption-page-1 h1 span::after{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 0.05em;
+    left: 0.15em;
+    bottom:0.1em;
+    background-image: linear-gradient( to left,rgb(97, 241, 241),transparent);    
+  filter: drop-shadow(0 0 15px black);
+    border-radius: 3em;
+    animation: under-line 10s infinite linear;
+
+}
+
+@keyframes under-line {
+0%{  background-position:   1000px;     }
+100%{  background-position:  3000px;     }
+}
+.page-1 .caption-page-1 p{
+font-size: 2em;
+font-weight: bolder;
+transition: all 1s;
+text-align: left;
+padding: 0.5em 1em;
+border-radius: 0 2em 2em 0;
+color: white;
+margin-top: 0.8em;
+}
+.page-1 .caption-page-1 p:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+.page-1 .caption-page-1 a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    position:relative;
+    overflow: hidden;
+    margin-left: 12em;
+    margin-top: 1em;
+    padding: 0.3em 0.5em;
+    transition:  all 0.9s;
+
+    
+}.page-1 .caption-page-1 .a-find{
+    margin-left: 1em;
+    
+}
+.page-1 .caption-page-1 a:hover{
+    color: black;
+    background-color: rgb(97, 241, 241) ;
+    box-shadow: 0 0 100px rgb(97, 241, 241) , 0 0 500px rgb(97, 241, 241);
+    border-radius: 2em;
+}
+.page-1 .caption-page-1 a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border-left:solid 3px rgb(97, 241, 241) ;
+    border-top:solid 3px rgb(97, 241, 241) ;
+    transition:  all 0.7s;
+}
+.page-1 .caption-page-1 a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1em;
+    height: 1em ;
+    border-right:solid 3px rgb(97, 241, 241) ;
+    border-bottom:solid 3px rgb(97, 241, 241) ;
+    transition:  all 0.7s;
+}
+.page-1 .caption-page-1 a:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.page-1 .caption-page-1 a:hover::before {
+    width: 100%;
+    height: 100%;
+}
+/***********************page-2*****************************/
+.page-2{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    padding: 3em;
+box-shadow: 0 0 15px black;
+margin-top: 3em;
+}
+.page-2 .title h2{
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0.3em 1em;
+    position: relative;
+    border-radius: 1em;
+}
+.page-2 .title h2 span{
+    font-size: 1.3em;
+    text-shadow: 0 0 15px rgb(97, 241, 241);
+}
+.page-2 .content{
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: repeat(4,20%);
+gap: 1em;
+justify-content: space-around;
+margin-top: 2em;
+
+}
+.page-2 .content .box {
+    height: 25em;
+    box-shadow:0 0 20px black ;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: white;
+}
+.page-2 .content .box .part-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;align-items: center;
+    background-image: radial-gradient(circle at 46% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 36% 87%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 50% 78%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 22% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 38% 63%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 55% 50%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 93% 55%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 24% 100%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 26% 53%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 17% 5%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 53% 51%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 10% 25%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 31% 56%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 40% 69%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 33% 89%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 96% 22%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),linear-gradient(0deg, rgb(5,235,248),rgb(61, 188, 235));    padding: 0.5em 0;
+    border-radius: 2em 2em 0 0 ;
+}
+.page-2 .content .box .part-1 h3{
+    font-size: 2em;
+  
+}
+.page-2 .content .box p{
+    text-align: center;
+    font-size: 1.5em;   
+    margin-top: 0.7em;
+    line-height: 1.5; 
+    font-weight: 500;
+  
+}
+
+.page-2 .content img{
+    width: 4em;
+}
+.page-2 .content .box .link{
+    width: 100%;
+    background-image: radial-gradient(circle at 46% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 36% 87%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 50% 78%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),radial-gradient(circle at 22% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 38% 63%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 55% 50%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 93% 55%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 24% 100%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),radial-gradient(circle at 26% 53%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 17% 5%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 53% 51%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 10% 25%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 31% 56%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 40% 69%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 33% 89%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),radial-gradient(circle at 96% 22%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),linear-gradient(0deg, rgb(5,235,248),rgb(61, 188, 235));    padding: 0.5em 0;
+    transform: translate(0 ,70%);
+    text-align: center;
+} 
+.page-2 .content .box .link a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+}
+/***********************page-3*****************************/
+.page-3{
+width: 100%;
+height: 80vh;
+background-color: transparent;
+position: relative;
+overflow: hidden;
+}
+.page-3 .title h2{
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0.3em 1em;
+    position: relative;
+    border-radius: 1em;
+}
+.page-3 .title h2 span{
+    font-size: 1.3em;
+    text-shadow: 0 0 15px rgb(97, 241, 241);
+}
+
+.page-3 .content p{
+    font-size: 2em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.page-3 .image{
+    width: 100%;
+    height: 65%;
+background: url(hospital.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+/***********************page-4*****************************/
+.page-4{
+
+    width: 100%;
+    height: 120vh;
+  
+    
+}
+.page-4 .title h2{
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0.3em 1em;
+    position: relative;
+    border-radius: 1em;
+}
+.page-4 .title h2 span{
+    font-size: 1.3em;
+    text-shadow: 0 0 15px rgb(97, 241, 241);
+}
+.cards{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.cards .card {
+    width: 48%;
+    height: 30em;
+    box-shadow: 0 0 15px black;
+    margin: 1em 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   border-radius: 1.5em;
+
+
+}
+.cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em 0 0 1.5em;
+    filter: brightness(60%);
+    transition: filter 0.7s;
+}
+.cards .card:hover img{
+    filter: brightness(100%);
+}
+.cards .card .caption {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.cards .card .caption .info{
+    width: 100%;
+    height: 50%;
+    padding: 0.1em 0.3em;
+}
+.cards .card .caption .info h3{
+    font-size: 3em;
+    text-align: center;
+}
+.cards .card .caption .info p{
+    font-size: 1.35em;
+    font-weight: 700;
+}
+.cards .card .caption .info p span{
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+
+.cards .card .caption .evo{
+    width: 100%;
+    height: 50%;
+ 
+}
+.cards .card .caption .evo h5{
+    font-size: 1.3em;
+}
+.cards .card .caption .evo .rate{
+    width: 100%;
+    display: flex; 
+    justify-content: space-around;   align-items: center;
+}
+.cards .card .caption .evo .rate p{
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+.cards .card:hover .caption .evo .rate p{
+    opacity: 1;
+}
+.cards .card .caption .evo span{
+    display: inline-block;
+    width: 90%;
+    height: 0.5em;
+    background-color: white; 
+    text-align: center;
+    border-radius: 5em;
+    position: relative;
+
+}
+.cards .card .caption .evo span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color:rgb(97, 241, 241) ;
+    filter: drop-shadow(0 0 5px aqua);
+    border-radius: 5em;
+    transition: width 0.6s;
+}
+.cards .card:hover .caption .evo .s-1::after{ width:100% ;   }
+.cards .card:hover .caption .evo .s-2::after{ width:97% ;   }
+.cards .card:hover .caption .evo .s-3::after{ width:75% ;   }
+.cards .card:hover .caption .evo .s-4::after{ width:100% ;   }
+.cards .card:hover .caption .evo .s-5::after{ width: 88%;   }
+.cards .card:hover .caption .evo .s-6:after{ width: 75%;   }
+.cards .card:hover .caption .evo .s-7::after{ width:80% ;   }
+.cards .card:hover .caption .evo .s-8::after{ width:90% ;   }
+.cards .card:hover .caption .evo .s-9::after{ width:77% ;   }
+.cards .card:hover .caption .evo .s-10::after{width:72% ;   }
+.cards .card:hover .caption .evo .s-11::after{width: 100%;   }
+.cards .card:hover .caption .evo .s-12::after{ width:92% ;   }
+.cards .card:hover .caption .evo .s-13::after{ width:71% ;   }
+.cards .card:hover .caption .evo .s-14::after{ width:80% ;   }
+.cards .card:hover .caption .evo .s-15::after{ width:67% ;   }
+.cards .card:hover .caption .evo .s-16::after{ width:86% ;   }
+
+
+
+/***********************page-5*****************************/
+.page-5{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+}
+.page-5 .title h2{
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 0.3em 1em;
+    position: relative;
+    border-radius: 1em;
+}
+.page-5 .title h2 span{
+    font-size: 1.3em;
+    text-shadow: 0 0 15px rgb(97, 241, 241);
+}
+.container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-auto-rows: 9em 12em;
+gap:  0.5em;
+}
+.gallery-items{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.gallery-items .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.gallery-items .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition:0.5s ;
+    cursor: pointer;
+    filter: brightness(60%);
+}
+.gallery-items .image:hover img{
+    transform: scale(1.3) ;
+    filter: brightness(100%);
+}
+.gallery-items .text{
+    opacity: 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 1em;
+    pointer-events: none;
+    z-index: 4;
+    transition: 0.3s ease-in-out;
+}
+.gallery-items:hover .text{
+opacity: 1;
+animation: move-down 0.3s linear;
+width: 100%;
+-webkit-backdrop-filter: blur(5px) saturate(1.8);
+backdrop-filter: blur(5px) saturate(1.8);
+}
+.w-1{
+grid-column: span 3;
+grid-row: span 2;
+}
+.w-2{
+grid-column: span 1;
+grid-row: span 5;
+}
+.w-3{
+grid-column: span 2;
+grid-row: span 5;
+}
+.w-4{
+grid-column: span 1;
+grid-row: span 2;
+}
+.w-5{
+grid-column: span 1;
+grid-row: span 3;
+}
+.w-6{
+grid-column: span 1;
+grid-row: span 2;
+}
+.w-7{
+grid-column: span 4;
+grid-row: span 2;
+}
+@keyframes move-down {
+0%{ top: 0%;   }
+50%{ top: 30%;   }
+100%{ top: 50%;   }
+}
+/***********************page-6*****************************/
+.page-6{
+    width: 100%;
+    height: 90vh;
+    margin:2em 0 ;
+
+
+}
+.page-6 .title h2{
+    width: fit-content;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.5em auto;
+    padding: 0.3em 1em;
+    position: relative;
+    border-radius: 1em;
+}
+.page-6 .title h2 span{
+    font-size: 1.3em;
+    text-shadow: 0 0 15px rgb(97, 241, 241);
+}
+.Reviews-cards{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.Reviews-cards .Review-card {
+    width: 23%;
+    height: 32em;
+    text-align: center;
+    box-shadow: 0 0 15px black;
+    border-radius: 1.5em;
+    transition: 0.5s;
+}
+.Reviews-cards .Review-card:hover{
+    height: 40em;
+
+} 
+
+.Reviews-cards .Review-card .image img{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    margin-top: 0.5em;
+    
+}
+.Reviews-cards .Review-card:hover .image img{
+    width: 100%;
+    height: 20em; 
+ 
+    border-radius: 1.5em 1.5em 0 0 ;
+    margin-top: 0em;
+}
+.Reviews-cards .Review-card .image  h1{
+    font-size: 3em;
+}
+.Reviews-cards .Review-card .info p{
+    font-size: 1.7em;
+    font-weight: 500;
+    padding: 0.2em 1em;
+}
+.Reviews-cards .Review-card .info i{
+color: aliceblue;
+margin: 0 0.3em;
+filter: drop-shadow(0 0 5px rgb(97, 241, 241));
+transition: 0.5s;
+}
+.Reviews-cards .Review-card:hover i{
+    transform: scale(1.2);
+}
+/***********************footer*****************************/
+.footer{
+width: 100%;
+height: 30em;
+box-shadow: 0 0 500px rgb(97, 241, 241);
+position: relative;
+
+}
+.left-part{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+
+.footer .title{
+font-size:4em ;
+position: absolute;
+left: 5%;
+top: 40%;
+transform: rotate(-30deg);
+
+
+}
+.left-part .links{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 3;
+   display: flex;
+   justify-content: center;
+
+  
+}
+.left-part .links ul{
+ position: relative;
+margin-top: -5em;
+
+}
+.left-part .links ul li{
+    list-style: none;
+    transition: 0.5s;
+}
+.left-part .links ul li a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin: 0.5em 0;
+    transition: 0.3s;
+    position: relative;
+
+}
+.left-part .links ul:hover li a{
+    color: rgba(136, 136, 136, 0.7);
+}
+
+.left-part .links ul li a:hover{
+    color: rgba(0, 0, 0, 0.7);
+
+}
+.left-part .links ul li a:before{
+content: '';
+position: absolute;
+left: 50%;
+top: 40%;
+font-size: 4em;
+display: flex;
+justify-self: center;
+align-items: center;
+transform: translate(-50%, -50%);
+color: rgba(0,0,0,0.7);
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 500px;
+z-index: -1;
+opacity: 0;
+transition: letter-spacing 0.5s ,padding 0.5s ;
+
+}
+.left-part .links ul li a:hover:before{
+    content: attr(date-text);
+    opacity: 1;
+    letter-spacing: 10px;
+    width: 8em;
+    height:30em;
+    padding-left: 3em;
+
+}
+
+
+.left-part .links ul li.li-1 a:before{
+background: url(footer-1.jpg);
+background-position: center; 
+}
+.left-part .links ul li.li-2 a:before{
+    background: url(footer-2.jpg);
+    background-position: center;}
+    
+    .left-part .links ul li.li-3 a:before{
+        background: url(footer-3.jpg);
+        background-position: center;}
+        
+
+
+  
